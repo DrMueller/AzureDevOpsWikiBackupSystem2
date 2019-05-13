@@ -2,7 +2,7 @@ name: 1.0$(rev:.r) # build numbering format
 
 variables:
   BuildConfiguration: 'Release'
-  FolderToPublish: 'Application'
+  FolderToBuild: 'Application'
 
 resources:
   repositories:
@@ -21,8 +21,8 @@ jobs:
   - template: AzureDevOps/Templates/StepTemplates/NetCore/Initialize_And_Test.yaml@ALMStuff
     parameters:
       buildConfiguration: $(BuildConfiguration)
-  - template: AzureDevOps/Templates/StepTemplates/NetCore/WebPublish.yaml@ALMStuff
+  - template: AzureDevOps/Templates/StepTemplates/NetCore/Build.yaml@ALMStuff
     parameters:
       BuildConfiguration: $(BuildConfiguration)
-      FolderToPublish: $(FolderToPublish)
+      FolderToBuild: $(FolderToBuild)
   - template: AzureDevOps/Templates/StepTemplates/NetCore/Zip_And_Save_Artifact.yaml@ALMStuff
