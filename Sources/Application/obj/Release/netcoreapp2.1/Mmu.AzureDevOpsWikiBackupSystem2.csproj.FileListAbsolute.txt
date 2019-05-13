@@ -1,0 +1,12 @@
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\bin\Release\netcoreapp2.1\Nlog.config
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\bin\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.deps.json
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\bin\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.runtimeconfig.json
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\bin\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.runtimeconfig.dev.json
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\bin\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.dll
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\bin\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.pdb
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\obj\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.csprojAssemblyReference.cache
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\obj\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.csproj.CoreCompileInputs.cache
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\obj\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.AssemblyInfoInputs.cache
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\obj\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.AssemblyInfo.cs
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\obj\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.dll
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\obj\Release\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.pdb
