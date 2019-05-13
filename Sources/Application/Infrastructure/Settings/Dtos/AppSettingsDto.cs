@@ -1,4 +1,4 @@
-﻿namespace Mmu.AzureDevOpsWikiBackupSystem2.Infrastructure.Settings.Dto
+﻿namespace Mmu.AzureDevOpsWikiBackupSystem2.Infrastructure.Settings.Dtos
 {
     public class AppSettingsDto
     {
@@ -8,6 +8,8 @@
 
         public string AzureDevOpsRepoPath { get; set; }
 
-        public string StorageConnectionString { get; set; }
+        public string DropboxApiKey { get; set; }
+
+        public string GitDownloadTempDirectory { get; set; }
     }
 }

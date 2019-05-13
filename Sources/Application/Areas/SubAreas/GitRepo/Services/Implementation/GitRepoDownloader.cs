@@ -27,13 +27,13 @@ namespace Mmu.AzureDevOpsWikiBackupSystem2.Areas.SubAreas.GitRepo.Services.Imple
             _repoPathServant.CleanUp(repoDirectory);
         }
 
-        public RepoDownloadResult DownloadRepo(string baseDirectory)
+        public RepoDownloadResult DownloadRepo()
         {
-            var repoDirectory = _fileSystem.Path.Combine(baseDirectory, "GitRepo");
+            var settings = _settingsProvider.ProvideSettings();
+            var repoDirectory = settings.GitDownloadTempDirectory;
+
             _repoPathServant.CleanUp(repoDirectory);
             var newDirectory = _fileSystem.Directory.CreateDirectory(repoDirectory);
-
-            var settings = _settingsProvider.ProvideSettings();
 
             var options = new CloneOptions
             {

@@ -30,15 +30,23 @@ namespace Mmu.AzureDevOpsWikiBackupSystem2.Areas.Orchestration.Services.Implemen
 
         public async Task CreateBackupAsync()
         {
-            var baseDirectory = @"C:\Tmp";
+            var downloadDirectory = string.Empty;
 
-            var downloadRepoResult = _gitRepoDownloader.DownloadRepo(baseDirectory);
-            var zippingResult = _zippingService.ZipDirectory(downloadRepoResult.DirectoryPath);
-            await _filePersistingService.PersistRepoZipAsync(zippingResult.ZipFilePath);
-            await _persistFilesCleanUpService.CleanUpOldRepoZipsAsync();
+            try
+            {
+                var downloadRepoResult = _gitRepoDownloader.DownloadRepo();
+                downloadDirectory = downloadRepoResult.DirectoryPath;
 
-            _fileSystem.File.Delete(zippingResult.ZipFilePath);
-            _gitRepoDownloader.CleanUp(downloadRepoResult.DirectoryPath);
+                var zippingResult = _zippingService.ZipDirectory(downloadDirectory);
+                await _filePersistingService.PersistRepoZipAsync(zippingResult.ZipFilePath);
+                await _persistFilesCleanUpService.CleanUpOldRepoZipsAsync();
+
+                _fileSystem.File.Delete(zippingResult.ZipFilePath);
+            }
+            finally
+            {
+                _gitRepoDownloader.CleanUp(downloadDirectory);
+            }
         }
     }
 }

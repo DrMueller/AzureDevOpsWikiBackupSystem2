@@ -4,7 +4,7 @@ namespace Mmu.AzureDevOpsWikiBackupSystem2.Areas.SubAreas.GitRepo.Services
 {
     public interface IGitRepoDownloader
     {
-        RepoDownloadResult DownloadRepo(string baseDirectory);
+        RepoDownloadResult DownloadRepo();
 
         void CleanUp(string repoDirectory);
     }

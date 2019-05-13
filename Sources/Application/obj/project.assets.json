@@ -480,7 +480,7 @@
           "build/_._": {}
         }
       },
-      "Mmu.Mlh.ConsoleExtensions/1.0.12": {
+      "Mmu.Mlh.ConsoleExtensions/1.0.13": {
         "type": "package",
         "dependencies": {
           "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.6.2",
@@ -523,7 +523,7 @@
           "lib/netstandard2.0/Mmu.Mlh.ServiceProvisioning.dll": {}
         }
       },
-      "Mmu.Mlh.SettingsProvisioning/1.0.4": {
+      "Mmu.Mlh.SettingsProvisioning/1.0.5": {
         "type": "package",
         "dependencies": {
           "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.6.2",
@@ -534,7 +534,7 @@
           "Microsoft.Extensions.Options.ConfigurationExtensions": "2.1.1",
           "StructureMap": "4.7.0",
           "StyleCop.Analyzers": "1.0.2",
-          "System.IO.Abstractions": "2.1.0.256"
+          "System.IO.Abstractions": "4.2.10"
         },
         "compile": {
           "lib/netstandard2.0/Mmu.Mlh.SettingsProvisioning.dll": {}
@@ -565,6 +565,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "NLog/4.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
         }
       },
       "StructureMap/4.7.1": {
@@ -675,22 +684,6 @@
           "lib/netstandard2.0/System.IO.Abstractions.dll": {}
         }
       },
-      "System.IO.FileSystem/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.IO": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading.Tasks": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.IO.FileSystem.dll": {}
-        }
-      },
       "System.IO.FileSystem.AccessControl/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -708,18 +701,6 @@
             "assetType": "runtime",
             "rid": "win"
           }
-        }
-      },
-      "System.IO.FileSystem.Primitives/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll": {}
         }
       },
       "System.Memory/4.5.1": {
@@ -850,17 +831,6 @@
         },
         "compile": {
           "ref/netstandard1.5/_._": {}
-        }
-      },
-      "System.Runtime.Handles/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Runtime.Handles.dll": {}
         }
       },
       "System.Runtime.Loader/4.3.0": {
@@ -1792,14 +1762,14 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Mmu.Mlh.ConsoleExtensions/1.0.12": {
-      "sha512": "bbV7QTfmEjiYsrZeDcrha4TweuBUwuQ3xqB/6ShZ7hY1M7pV8Th+ZMJUn//S94GrmTRaXDToOkl94LVSFvHW5Q==",
+    "Mmu.Mlh.ConsoleExtensions/1.0.13": {
+      "sha512": "CeO31pXiaMVYoZhTmMFCxv/JUMxGhs/WLs/xE9ItVNiHStd92Yx1S9otqDiswi1Xoe4e7DoBVuXXIoaVk3m2kQ==",
       "type": "package",
-      "path": "mmu.mlh.consoleextensions/1.0.12",
+      "path": "mmu.mlh.consoleextensions/1.0.13",
       "files": [
         ".nupkg.metadata",
         "lib/netcoreapp2.1/Mmu.Mlh.ConsoleExtensions.dll",
-        "mmu.mlh.consoleextensions.1.0.12.nupkg.sha512",
+        "mmu.mlh.consoleextensions.1.0.13.nupkg.sha512",
         "mmu.mlh.consoleextensions.nuspec"
       ]
     },
@@ -1825,14 +1795,14 @@
         "mmu.mlh.serviceprovisioning.nuspec"
       ]
     },
-    "Mmu.Mlh.SettingsProvisioning/1.0.4": {
-      "sha512": "XtGo0c7VNpBAh6IgwmhnypnMi4tAxWlKMaBrcNG+PmPuWpOdzB4ALvP1Z85+IZWkD6iRuhpvjTs/YlYoREuwNg==",
+    "Mmu.Mlh.SettingsProvisioning/1.0.5": {
+      "sha512": "+gVN8S+SV2JJ4t2KUfk5fuA6meQj2abz79gATkcEkslxcCHO4M/qg+VUDMGaIBfw7OCh2WL7YaLDRQhZILxlZw==",
       "type": "package",
-      "path": "mmu.mlh.settingsprovisioning/1.0.4",
+      "path": "mmu.mlh.settingsprovisioning/1.0.5",
       "files": [
         ".nupkg.metadata",
         "lib/netstandard2.0/Mmu.Mlh.SettingsProvisioning.dll",
-        "mmu.mlh.settingsprovisioning.1.0.4.nupkg.sha512",
+        "mmu.mlh.settingsprovisioning.1.0.5.nupkg.sha512",
         "mmu.mlh.settingsprovisioning.nuspec"
       ]
     },
@@ -1992,6 +1962,39 @@
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "newtonsoft.json.11.0.2.nupkg.sha512",
         "newtonsoft.json.nuspec"
+      ]
+    },
+    "NLog/4.6.3": {
+      "sha512": "DYbJKfpjciXc/y177fou0XsSB+ZsPFW63c3ZtrYNScU2Sw3j4o12zVpm7p30PCaaSUMLdn1iYF1KbdPcdR0Ofg==",
+      "type": "package",
+      "path": "nlog/4.6.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid44/NLog.dll",
+        "lib/monoandroid44/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40-client/NLog.dll",
+        "lib/net40-client/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "lib/xamarinios10/NLog.dll",
+        "lib/xamarinios10/NLog.xml",
+        "nlog.4.6.3.nupkg.sha512",
+        "nlog.nuspec"
       ]
     },
     "StructureMap/4.7.1": {
@@ -2483,43 +2486,6 @@
         "system.io.abstractions.nuspec"
       ]
     },
-    "System.IO.FileSystem/4.3.0": {
-      "sha512": "3wEMARTnuio+ulnvi+hkRNROYwa1kylvYahhcLk4HSoVdl+xxTFVeVlYOfLwrDPImGls0mDqbMhrza8qnWPTdA==",
-      "type": "package",
-      "path": "system.io.filesystem/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.IO.FileSystem.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.IO.FileSystem.dll",
-        "ref/netstandard1.3/System.IO.FileSystem.dll",
-        "ref/netstandard1.3/System.IO.FileSystem.xml",
-        "ref/netstandard1.3/de/System.IO.FileSystem.xml",
-        "ref/netstandard1.3/es/System.IO.FileSystem.xml",
-        "ref/netstandard1.3/fr/System.IO.FileSystem.xml",
-        "ref/netstandard1.3/it/System.IO.FileSystem.xml",
-        "ref/netstandard1.3/ja/System.IO.FileSystem.xml",
-        "ref/netstandard1.3/ko/System.IO.FileSystem.xml",
-        "ref/netstandard1.3/ru/System.IO.FileSystem.xml",
-        "ref/netstandard1.3/zh-hans/System.IO.FileSystem.xml",
-        "ref/netstandard1.3/zh-hant/System.IO.FileSystem.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.io.filesystem.4.3.0.nupkg.sha512",
-        "system.io.filesystem.nuspec"
-      ]
-    },
     "System.IO.FileSystem.AccessControl/4.5.0": {
       "sha512": "TYe6xstoqT5MlTly0OtPU6u9zWuNScLVMEx6sTCjjx+Hqdp0wCXoG6fnzMpTPMQACXQzi9pd2N5Tloow+5jQdQ==",
       "type": "package",
@@ -2557,44 +2523,6 @@
         "system.io.filesystem.accesscontrol.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "System.IO.FileSystem.Primitives/4.3.0": {
-      "sha512": "6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
-      "type": "package",
-      "path": "system.io.filesystem.primitives/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.IO.FileSystem.Primitives.dll",
-        "lib/netstandard1.3/System.IO.FileSystem.Primitives.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/System.IO.FileSystem.Primitives.dll",
-        "ref/netstandard1.3/System.IO.FileSystem.Primitives.dll",
-        "ref/netstandard1.3/System.IO.FileSystem.Primitives.xml",
-        "ref/netstandard1.3/de/System.IO.FileSystem.Primitives.xml",
-        "ref/netstandard1.3/es/System.IO.FileSystem.Primitives.xml",
-        "ref/netstandard1.3/fr/System.IO.FileSystem.Primitives.xml",
-        "ref/netstandard1.3/it/System.IO.FileSystem.Primitives.xml",
-        "ref/netstandard1.3/ja/System.IO.FileSystem.Primitives.xml",
-        "ref/netstandard1.3/ko/System.IO.FileSystem.Primitives.xml",
-        "ref/netstandard1.3/ru/System.IO.FileSystem.Primitives.xml",
-        "ref/netstandard1.3/zh-hans/System.IO.FileSystem.Primitives.xml",
-        "ref/netstandard1.3/zh-hant/System.IO.FileSystem.Primitives.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.io.filesystem.primitives.4.3.0.nupkg.sha512",
-        "system.io.filesystem.primitives.nuspec"
       ]
     },
     "System.Memory/4.5.1": {
@@ -3196,43 +3124,6 @@
         "system.runtime.extensions.nuspec"
       ]
     },
-    "System.Runtime.Handles/4.3.0": {
-      "sha512": "OKiSUN7DmTWeYb3l51A7EYaeNMnvxwE249YtZz7yooT4gOZhmTjIn48KgSsw2k2lYdLgTKNJw/ZIfSElwDRVgg==",
-      "type": "package",
-      "path": "system.runtime.handles/4.3.0",
-      "files": [
-        ".nupkg.metadata",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net46/_._",
-        "ref/netstandard1.3/System.Runtime.Handles.dll",
-        "ref/netstandard1.3/System.Runtime.Handles.xml",
-        "ref/netstandard1.3/de/System.Runtime.Handles.xml",
-        "ref/netstandard1.3/es/System.Runtime.Handles.xml",
-        "ref/netstandard1.3/fr/System.Runtime.Handles.xml",
-        "ref/netstandard1.3/it/System.Runtime.Handles.xml",
-        "ref/netstandard1.3/ja/System.Runtime.Handles.xml",
-        "ref/netstandard1.3/ko/System.Runtime.Handles.xml",
-        "ref/netstandard1.3/ru/System.Runtime.Handles.xml",
-        "ref/netstandard1.3/zh-hans/System.Runtime.Handles.xml",
-        "ref/netstandard1.3/zh-hant/System.Runtime.Handles.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.runtime.handles.4.3.0.nupkg.sha512",
-        "system.runtime.handles.nuspec"
-      ]
-    },
     "System.Runtime.Loader/4.3.0": {
       "sha512": "DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
       "type": "package",
@@ -3587,11 +3478,11 @@
       "Dropbox.Api >= 4.9.3",
       "LibGit2Sharp >= 0.26.0",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Mmu.Mlh.ConsoleExtensions >= 1.0.12",
+      "Mmu.Mlh.ConsoleExtensions >= 1.0.13",
       "Mmu.Mlh.ServiceProvisioning >= 2.0.7",
-      "Mmu.Mlh.SettingsProvisioning >= 1.0.4",
-      "System.IO.Abstractions >= 4.2.10",
-      "System.IO.FileSystem >= 4.3.0"
+      "Mmu.Mlh.SettingsProvisioning >= 1.0.5",
+      "NLog >= 4.6.3",
+      "System.IO.Abstractions >= 4.2.10"
     ]
   },
   "packageFolders": {
@@ -3619,7 +3510,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://packagesource": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://drmueller.pkgs.visualstudio.com/_packaging/DrMuellersFeed/nuget/v3/index.json": {}
       },
@@ -3652,7 +3542,7 @@
           },
           "Mmu.Mlh.ConsoleExtensions": {
             "target": "Package",
-            "version": "[1.0.12, )"
+            "version": "[1.0.13, )"
           },
           "Mmu.Mlh.ServiceProvisioning": {
             "target": "Package",
@@ -3660,15 +3550,15 @@
           },
           "Mmu.Mlh.SettingsProvisioning": {
             "target": "Package",
-            "version": "[1.0.4, )"
+            "version": "[1.0.5, )"
+          },
+          "NLog": {
+            "target": "Package",
+            "version": "[4.6.3, )"
           },
           "System.IO.Abstractions": {
             "target": "Package",
             "version": "[4.2.10, )"
-          },
-          "System.IO.FileSystem": {
-            "target": "Package",
-            "version": "[4.3.0, )"
           }
         },
         "imports": [

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "1f6732cd0c765dee95c83be444a63ac9ebfb9a04"
+    "signature": "eafcf4b1d604608c17b765be091a7fbcb8288e07"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,11 +10,11 @@
         "dependencies": {
           "Dropbox.Api": "4.9.3",
           "LibGit2Sharp": "0.26.0",
-          "Mmu.Mlh.ConsoleExtensions": "1.0.12",
+          "Mmu.Mlh.ConsoleExtensions": "1.0.13",
           "Mmu.Mlh.ServiceProvisioning": "2.0.7",
-          "Mmu.Mlh.SettingsProvisioning": "1.0.4",
-          "System.IO.Abstractions": "4.2.10",
-          "System.IO.FileSystem": "4.3.0"
+          "Mmu.Mlh.SettingsProvisioning": "1.0.5",
+          "NLog": "4.6.3",
+          "System.IO.Abstractions": "4.2.10"
         },
         "runtime": {
           "Mmu.AzureDevOpsWikiBackupSystem2.dll": {}
@@ -271,7 +271,7 @@
       },
       "Microsoft.NetCore.Analyzers/2.6.2": {},
       "Microsoft.NetFramework.Analyzers/2.6.2": {},
-      "Mmu.Mlh.ConsoleExtensions/1.0.12": {
+      "Mmu.Mlh.ConsoleExtensions/1.0.13": {
         "dependencies": {
           "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.6.2",
           "Mmu.Mlh.LanguageExtensions": "2.1.18",
@@ -280,8 +280,8 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/Mmu.Mlh.ConsoleExtensions.dll": {
-            "assemblyVersion": "1.0.12.0",
-            "fileVersion": "1.0.12.0"
+            "assemblyVersion": "1.0.13.0",
+            "fileVersion": "1.0.13.0"
           }
         }
       },
@@ -311,7 +311,7 @@
           }
         }
       },
-      "Mmu.Mlh.SettingsProvisioning/1.0.4": {
+      "Mmu.Mlh.SettingsProvisioning/1.0.5": {
         "dependencies": {
           "Microsoft.CodeAnalysis.FxCopAnalyzers": "2.6.2",
           "Microsoft.Extensions.Configuration": "2.1.1",
@@ -325,8 +325,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/Mmu.Mlh.SettingsProvisioning.dll": {
-            "assemblyVersion": "1.0.4.0",
-            "fileVersion": "1.0.4.0"
+            "assemblyVersion": "1.0.5.0",
+            "fileVersion": "1.0.5.0"
           }
         }
       },
@@ -335,6 +335,14 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.0.2.21924"
+          }
+        }
+      },
+      "NLog/4.6.3": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.3.9764"
           }
         }
       },
@@ -405,16 +413,6 @@
           }
         }
       },
-      "System.IO.FileSystem/4.3.0": {
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading.Tasks": "4.3.0"
-        }
-      },
       "System.IO.FileSystem.AccessControl/4.5.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.5.0",
@@ -425,11 +423,6 @@
             "rid": "win",
             "assetType": "runtime"
           }
-        }
-      },
-      "System.IO.FileSystem.Primitives/4.3.0": {
-        "dependencies": {
-          "System.Runtime": "4.3.0"
         }
       },
       "System.Memory/4.5.1": {},
@@ -487,11 +480,6 @@
         }
       },
       "System.Runtime.Extensions/4.3.0": {
-        "dependencies": {
-          "System.Runtime": "4.3.0"
-        }
-      },
-      "System.Runtime.Handles/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
         }
@@ -705,12 +693,12 @@
       "path": "microsoft.netframework.analyzers/2.6.2",
       "hashPath": "microsoft.netframework.analyzers.2.6.2.nupkg.sha512"
     },
-    "Mmu.Mlh.ConsoleExtensions/1.0.12": {
+    "Mmu.Mlh.ConsoleExtensions/1.0.13": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bbV7QTfmEjiYsrZeDcrha4TweuBUwuQ3xqB/6ShZ7hY1M7pV8Th+ZMJUn//S94GrmTRaXDToOkl94LVSFvHW5Q==",
-      "path": "mmu.mlh.consoleextensions/1.0.12",
-      "hashPath": "mmu.mlh.consoleextensions.1.0.12.nupkg.sha512"
+      "sha512": "sha512-CeO31pXiaMVYoZhTmMFCxv/JUMxGhs/WLs/xE9ItVNiHStd92Yx1S9otqDiswi1Xoe4e7DoBVuXXIoaVk3m2kQ==",
+      "path": "mmu.mlh.consoleextensions/1.0.13",
+      "hashPath": "mmu.mlh.consoleextensions.1.0.13.nupkg.sha512"
     },
     "Mmu.Mlh.LanguageExtensions/2.1.18": {
       "type": "package",
@@ -726,12 +714,12 @@
       "path": "mmu.mlh.serviceprovisioning/2.0.7",
       "hashPath": "mmu.mlh.serviceprovisioning.2.0.7.nupkg.sha512"
     },
-    "Mmu.Mlh.SettingsProvisioning/1.0.4": {
+    "Mmu.Mlh.SettingsProvisioning/1.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XtGo0c7VNpBAh6IgwmhnypnMi4tAxWlKMaBrcNG+PmPuWpOdzB4ALvP1Z85+IZWkD6iRuhpvjTs/YlYoREuwNg==",
-      "path": "mmu.mlh.settingsprovisioning/1.0.4",
-      "hashPath": "mmu.mlh.settingsprovisioning.1.0.4.nupkg.sha512"
+      "sha512": "sha512-+gVN8S+SV2JJ4t2KUfk5fuA6meQj2abz79gATkcEkslxcCHO4M/qg+VUDMGaIBfw7OCh2WL7YaLDRQhZILxlZw==",
+      "path": "mmu.mlh.settingsprovisioning/1.0.5",
+      "hashPath": "mmu.mlh.settingsprovisioning.1.0.5.nupkg.sha512"
     },
     "Newtonsoft.Json/11.0.2": {
       "type": "package",
@@ -739,6 +727,13 @@
       "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "path": "newtonsoft.json/11.0.2",
       "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "NLog/4.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DYbJKfpjciXc/y177fou0XsSB+ZsPFW63c3ZtrYNScU2Sw3j4o12zVpm7p30PCaaSUMLdn1iYF1KbdPcdR0Ofg==",
+      "path": "nlog/4.6.3",
+      "hashPath": "nlog.4.6.3.nupkg.sha512"
     },
     "StructureMap/4.7.1": {
       "type": "package",
@@ -803,26 +798,12 @@
       "path": "system.io.abstractions/4.2.10",
       "hashPath": "system.io.abstractions.4.2.10.nupkg.sha512"
     },
-    "System.IO.FileSystem/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-3wEMARTnuio+ulnvi+hkRNROYwa1kylvYahhcLk4HSoVdl+xxTFVeVlYOfLwrDPImGls0mDqbMhrza8qnWPTdA==",
-      "path": "system.io.filesystem/4.3.0",
-      "hashPath": "system.io.filesystem.4.3.0.nupkg.sha512"
-    },
     "System.IO.FileSystem.AccessControl/4.5.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-TYe6xstoqT5MlTly0OtPU6u9zWuNScLVMEx6sTCjjx+Hqdp0wCXoG6fnzMpTPMQACXQzi9pd2N5Tloow+5jQdQ==",
       "path": "system.io.filesystem.accesscontrol/4.5.0",
       "hashPath": "system.io.filesystem.accesscontrol.4.5.0.nupkg.sha512"
-    },
-    "System.IO.FileSystem.Primitives/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
-      "path": "system.io.filesystem.primitives/4.3.0",
-      "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
     },
     "System.Memory/4.5.1": {
       "type": "package",
@@ -900,13 +881,6 @@
       "sha512": "sha512-guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
       "path": "system.runtime.extensions/4.3.0",
       "hashPath": "system.runtime.extensions.4.3.0.nupkg.sha512"
-    },
-    "System.Runtime.Handles/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OKiSUN7DmTWeYb3l51A7EYaeNMnvxwE249YtZz7yooT4gOZhmTjIn48KgSsw2k2lYdLgTKNJw/ZIfSElwDRVgg==",
-      "path": "system.runtime.handles/4.3.0",
-      "hashPath": "system.runtime.handles.4.3.0.nupkg.sha512"
     },
     "System.Runtime.Loader/4.3.0": {
       "type": "package",

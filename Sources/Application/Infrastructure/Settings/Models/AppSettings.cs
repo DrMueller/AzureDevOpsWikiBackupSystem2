@@ -7,17 +7,23 @@ namespace Mmu.AzureDevOpsWikiBackupSystem2.Infrastructure.Settings.Models
     {
         public string AzureDevOpsRepoAccessToken { get; }
         public Uri AzureDevOpsRepoPath { get; }
-        public string StorageConnectionString { get; }
+        public string DropboxApiKey { get; }
+        public string GitDownloadTempDirectory { get; }
 
-        public AppSettings(string azureDevOpsRepoAccessToken, Uri azureDevOpsRepoPath, string storageConnectionString)
+        public AppSettings(
+            string azureDevOpsRepoAccessToken,
+            Uri azureDevOpsRepoPath,
+            string dropboxApiKey,
+            string gitDownloadTempPath)
         {
             Guard.StringNotNullOrEmpty(() => azureDevOpsRepoAccessToken);
             Guard.ObjectNotNull(() => azureDevOpsRepoPath);
-            Guard.StringNotNullOrEmpty(() => storageConnectionString);
+            Guard.StringNotNullOrEmpty(() => dropboxApiKey);
 
             AzureDevOpsRepoAccessToken = azureDevOpsRepoAccessToken;
             AzureDevOpsRepoPath = azureDevOpsRepoPath;
-            StorageConnectionString = storageConnectionString;
+            DropboxApiKey = dropboxApiKey;
+            GitDownloadTempDirectory = gitDownloadTempPath;
         }
     }
 }

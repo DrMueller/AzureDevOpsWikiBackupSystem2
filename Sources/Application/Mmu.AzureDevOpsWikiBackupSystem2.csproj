@@ -8,17 +8,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\SubAreas\" />
     <Folder Include="Areas\Orchestration\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Dropbox.Api" Version="4.9.3" />
     <PackageReference Include="LibGit2Sharp" Version="0.26.0" />
-    <PackageReference Include="Mmu.Mlh.ConsoleExtensions" Version="1.0.12" />
+    <PackageReference Include="Mmu.Mlh.ConsoleExtensions" Version="1.0.13" />
     <PackageReference Include="Mmu.Mlh.ServiceProvisioning" Version="2.0.7" />
-    <PackageReference Include="Mmu.Mlh.SettingsProvisioning" Version="1.0.4" />
+    <PackageReference Include="Mmu.Mlh.SettingsProvisioning" Version="1.0.5" />
+    <PackageReference Include="NLog" Version="4.6.3" />
     <PackageReference Include="System.IO.Abstractions" Version="4.2.10" />
-    <PackageReference Include="System.IO.FileSystem" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Nlog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

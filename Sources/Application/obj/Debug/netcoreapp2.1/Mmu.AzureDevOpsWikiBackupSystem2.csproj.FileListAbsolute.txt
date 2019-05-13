@@ -8,4 +8,4 @@ C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\obj\Debug\net
 C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\bin\Debug\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.pdb
 C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\obj\Debug\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.dll
 C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\obj\Debug\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.pdb
-C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\obj\Debug\netcoreapp2.1\Mmu.AzureDevOpsWikiBackupSystem2.csprojAssemblyReference.cache
+C:\MyGit\Personal\AzureDevOpsWikiBackupSystem2\Sources\Application\bin\Debug\netcoreapp2.1\Nlog.config
