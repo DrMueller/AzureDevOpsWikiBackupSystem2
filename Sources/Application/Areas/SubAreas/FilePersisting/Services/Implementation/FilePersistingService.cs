@@ -1,24 +1,21 @@
-﻿using System;
-using System.IO.Abstractions;
-using System.Net.Http;
+﻿using System.IO.Abstractions;
 using System.Threading;
 using System.Threading.Tasks;
-using Dropbox.Api;
 using Dropbox.Api.Files;
-using Mmu.AzureDevOpsWikiBackupSystem2.Infrastructure.Settings.Services;
+using Mmu.AzureDevOpsWikiBackupSystem2.Areas.SubAreas.FilePersisting.Services.Servants;
 
 namespace Mmu.AzureDevOpsWikiBackupSystem2.Areas.SubAreas.FilePersisting.Services.Implementation
 {
     public class FilePersistingService : IFilePersistingService
     {
-        private readonly ISettingsProvider _settingsProvider;
+        private readonly IDropboxClientFactory _dropboxClientFactory;
         private readonly IFileSystem _fileSystem;
 
         public FilePersistingService(
-            ISettingsProvider settingsProvider,
+            IDropboxClientFactory dropboxClientFactory,
             IFileSystem fileSystem)
         {
-            _settingsProvider = settingsProvider;
+            _dropboxClientFactory = dropboxClientFactory;
             _fileSystem = fileSystem;
         }
 
@@ -38,20 +35,11 @@ namespace Mmu.AzureDevOpsWikiBackupSystem2.Areas.SubAreas.FilePersisting.Service
 
         private Task UploadToDropBoxAsync(string filePath)
         {
-            var apiKey = _settingsProvider.ProvideSettings().DropboxApiKey;
-            var config = new DropboxClientConfig
-            {
-                HttpClient = new HttpClient
-                {
-                    Timeout = new TimeSpan(1, 0, 0)
-                }
-            };
-
-            var client = new DropboxClient(apiKey, config);
             var fileName = _fileSystem.Path.GetFileName(filePath);
-
             var streamData = _fileSystem.File.OpenRead(filePath);
             streamData.Seek(0, System.IO.SeekOrigin.Begin);
+
+            var client = _dropboxClientFactory.Create();
             return client.Files.UploadAsync($"/{fileName}", WriteMode.Overwrite.Instance, body: streamData);
         }
     }

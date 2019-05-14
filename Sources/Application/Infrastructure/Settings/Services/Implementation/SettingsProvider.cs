@@ -19,7 +19,7 @@ namespace Mmu.AzureDevOpsWikiBackupSystem2.Infrastructure.Settings.Services.Impl
             var settingsDto = _settingsFactory.CreateSettings<AppSettingsDto>(
                 AppSettingsDto.SectionKey,
                 string.Empty,
-                @"C:\Users\Matthias\Desktop\Work\AzureDevOpsWikibackupSystem\appsettings.json");
+                @"C:\Users\Matthias\Desktop\Work\AzureDevOpsWikibackupSystem2\appsettings.json");
 
             return new AppSettings(
                 settingsDto.AzureDevOpsRepoAccessToken,

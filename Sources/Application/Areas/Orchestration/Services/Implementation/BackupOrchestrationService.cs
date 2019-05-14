@@ -31,20 +31,22 @@ namespace Mmu.AzureDevOpsWikiBackupSystem2.Areas.Orchestration.Services.Implemen
         public async Task CreateBackupAsync()
         {
             var downloadDirectory = string.Empty;
-
+            var zipFilePath = string.Empty;
             try
             {
                 var downloadRepoResult = _gitRepoDownloader.DownloadRepo();
                 downloadDirectory = downloadRepoResult.DirectoryPath;
-
-                var zippingResult = _zippingService.ZipDirectory(downloadDirectory);
-                await _filePersistingService.PersistRepoZipAsync(zippingResult.ZipFilePath);
+                zipFilePath = _zippingService.ZipDirectory(downloadDirectory).ZipFilePath;
+                await _filePersistingService.PersistRepoZipAsync(zipFilePath);
                 await _persistFilesCleanUpService.CleanUpOldRepoZipsAsync();
-
-                _fileSystem.File.Delete(zippingResult.ZipFilePath);
             }
             finally
             {
+                if (_fileSystem.File.Exists(zipFilePath))
+                {
+                    _fileSystem.File.Delete(zipFilePath);
+                }
+
                 _gitRepoDownloader.CleanUp(downloadDirectory);
             }
         }
